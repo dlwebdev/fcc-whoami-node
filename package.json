@@ -1,0 +1,17 @@
+{
+  "name": "whoami",
+  "version": "1.0.0",
+  "description": "Free Code Camp - Node JS - Who Am I request header parser microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Weber",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-request-language": "^1.1.4",
+    "express-useragent": "^0.2.4",
+    "os": "^0.1.1"
+  }
+}
