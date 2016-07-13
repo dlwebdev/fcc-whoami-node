@@ -3,6 +3,8 @@ var app = express();
 var os = require('os');
 var useragent = require('express-useragent');
 
+var port = process.env.PORT || 8080;
+
 // I can get the IP address, language and operating system for my browser.
 // {"ipaddress":"104.139.46.215","language":"en-US","software":"X11; Linux x86_64"}
 
@@ -28,6 +30,6 @@ app.get('/', function (req, res) {
     res.send("to access whoami app visit: /api/whoami/");
 });
 
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!');
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
 });
